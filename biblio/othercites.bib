@@ -1,4 +1,28 @@
 % ГОСТ Р 7.0.11-2011, Приложение Б, Книги
+@book{frawley,
+    publisher = {L. Erlbaum Associates},
+    year = {1992},
+    author = {William Frawley},
+    title = {Linguistic Semantics}
+}
+
+@article{sem_DBLP,
+  author    = {S{\'{e}}bastien Harispe and
+               Sylvie Ranwez and
+               Stefan Janaqi and
+               Jacky Montmain},
+  title     = {Semantic Similarity from Natural Language and Ontology Analysis},
+  journal   = {CoRR},
+  volume    = {abs/1704.05295},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1704.05295},
+  archivePrefix = {arXiv},
+  eprint    = {1704.05295},
+  timestamp = {Mon, 13 Aug 2018 16:49:15 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/HarispeRJM17},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
 @Article{Albatineh2011,
     author="Albatineh, Ahmed N.
         and Niewiadomska-Bugaj, Magdalena",
@@ -328,6 +352,42 @@ publisher = "Global WordNet Association",
  address = {New York, NY, USA},
  keywords = {short text similarity, word embeddings},
 } 
+
+
+
+
+
+
+@InProceedings{decomp,
+author="Nickel, Maximilian
+and Tresp, Volker",
+editor="Blockeel, Hendrik
+and Kersting, Kristian
+and Nijssen, Siegfried
+and {\v{Z}}elezn{\'y}, Filip",
+title="Tensor Factorization for Multi-relational Learning",
+booktitle="Machine Learning and Knowledge Discovery in Databases",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="617--621",
+abstract="Tensor factorization has emerged as a promising approach for solving relational learning tasks. Here we review recent results on a particular tensor factorization approach, i.e. Rescal, which has demonstrated state-of-the-art relational learning results, while scaling to knowledge bases with millions of entities and billions of known facts.",
+isbn="978-3-642-40994-3"
+}
+
+
+@article{tens_decomp,
+author = {Kolda, Tamara G. and Bader, Brett W.},
+title = {Tensor Decompositions and Applications},
+journal = {SIAM Review},
+volume = {51},
+number = {3},
+pages = {455-500},
+year = {2009},
+doi = {10.1137/07070111X},
+URL = {https://doi.org/10.1137/07070111X},
+eprint = {https://doi.org/10.1137/07070111X}
+}
 
 @article{leven,
   added-at = {2008-03-15T10:37:17.000+0100},
@@ -699,7 +759,7 @@ note = {ACL Anthology Identifier: L02-1128},
 
 указать эти ссылки в тексте (кластеризация)
 
-@article{doi:10.1142/S1793351X16400195,
+@article{sem_doc_clust,
 author = {Stanchev, Lubomir},
 title = {Fine-Tuning an Algorithm for Semantic Document Clustering Using a Similarity Graph},
 journal = {International Journal of Semantic Computing},
@@ -713,7 +773,7 @@ URL = {https://www.worldscientific.com/doi/abs/10.1142/S1793351X16400195},
 eprint = {https://www.worldscientific.com/doi/pdf/10.1142/S1793351X16400195}
 }
 
-@INPROCEEDINGS{7830850, 
+@INPROCEEDINGS{comp_intel, 
 author={Q. Bai and C. Jin}, 
 booktitle={2016 9th International Symposium on Computational Intelligence and Design (ISCID)}, 
 title={Text Clustering Algorithm Based on Semantic Graph Structure}, 
@@ -852,6 +912,39 @@ month={Dec},}
     title = {Glove: Global vectors for word representation},
     booktitle = {In EMNLP},
     year = {2014}
+}
+
+@misc{starspace,
+  added-at = {2017-09-16T15:07:22.000+0200},
+  author = {Wu, Ledell and Fisch, Adam and Chopra, Sumit and Adams, Keith and Bordes, Antoine and Weston, Jason},
+  biburl = {https://www.bibsonomy.org/bibtex/267aa5262d32b09a79e591e516b55d329/crack521},
+  description = {StarSpace: Embed All The Things!},
+  interhash = {e83438f3dcdc19a3db05153e58a5c6b6},
+  intrahash = {67aa5262d32b09a79e591e516b55d329},
+  keywords = {deep_learning embedding},
+  note = {cite arxiv:1709.03856},
+  timestamp = {2017-09-16T15:07:22.000+0200},
+  title = {StarSpace: Embed All The Things!},
+  url = {http://arxiv.org/abs/1709.03856},
+  year = 2017
+}
+
+@article{bert,
+  author    = {Jacob Devlin and
+               Ming{-}Wei Chang and
+               Kenton Lee and
+               Kristina Toutanova},
+  title     = {{BERT:} Pre-training of Deep Bidirectional Transformers for Language
+               Understanding},
+  journal   = {CoRR},
+  volume    = {abs/1810.04805},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1810.04805},
+  archivePrefix = {arXiv},
+  eprint    = {1810.04805},
+  timestamp = {Tue, 30 Oct 2018 20:39:56 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1810-04805},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @inproceedings{xgboost,
@@ -1125,4 +1218,257 @@ url = {http://papers.nips.cc/paper/5028-reasoning-with-neural-tensor-networks-fo
   timestamp = {Sat, 16 Dec 2017 18:11:27 +0100},
   biburl    = {https://dblp.org/rec/bib/conf/aaai/LinLSLZ15},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{spmi,
+  abstract = {Methods for unsupervised hypernym detection may broadly be categorized
+according to two paradigms: pattern-based and distributional methods. In this
+paper, we study the performance of both approaches on several hypernymy tasks
+and find that simple pattern-based methods consistently outperform
+distributional methods on common benchmark datasets. Our results show that
+pattern-based models provide important contextual constraints which are not yet
+captured in distributional methods.},
+  added-at = {2018-10-18T21:14:47.000+0200},
+  author = {Roller, Stephen and Kiela, Douwe and Nickel, Maximilian},
+  biburl = {https://www.bibsonomy.org/bibtex/25ea3c9b7c2187f477c9c8056b906c5fb/thoni},
+  booktitle = {ACL (2)},
+  interhash = {ed7de4b70108ce9124ef778e5c95539e},
+  intrahash = {5ea3c9b7c2187f477c9c8056b906c5fb},
+  keywords = {embeddings hearst hierachical relations},
+  pages = {358-363},
+  publisher = {Association for Computational Linguistics},
+  timestamp = {2018-10-25T01:25:29.000+0200},
+  title = {Hearst Patterns Revisited: Automatic Hypernym Detection from Large Text
+  Corpora},
+  url = {http://arxiv.org/abs/1806.03191},
+  year = 2018
+}
+
+@ARTICLE{svd,
+    author = {Dan Kalman},
+    title = {A singularly valuable decomposition: The SVD of a matrix},
+    journal = {College Math Journal},
+    year = {1996},
+    volume = {27},
+    pages = {2--23}
+}
+
+@inproceedings{lao,
+ author = {Lao, Ni and Mitchell, Tom and Cohen, William W.},
+ title = {Random Walk Inference and Learning in a Large Scale Knowledge Base},
+ booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+ series = {EMNLP '11},
+ year = {2011},
+ isbn = {978-1-937284-11-4},
+ location = {Edinburgh, United Kingdom},
+ pages = {529--539},
+ numpages = {11},
+ url = {http://dl.acm.org/citation.cfm?id=2145432.2145494},
+ acmid = {2145494},
+ publisher = {Association for Computational Linguistics},
+ address = {Stroudsburg, PA, USA},
+} 
+
+@INPROCEEDINGS{pathsim,
+    author = {Yizhou Sun and Jiawei Han and Xifeng Yan and Philip S. Yu and Tianyi Wu},
+    title = {Pathsim: Meta path-based top-k similarity search in heterogeneous information networks},
+    booktitle = {In VLDB’ 11},
+    year = {2011}
+}
+
+@inproceedings{pathsimext,
+  author    = {Leong Hou U and
+               Kun Yao and
+               Hoi Fong Mak},
+  title     = {PathSimExt: Revisiting PathSim in Heterogeneous Information Networks},
+  booktitle = {{WAIM}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {8485},
+  pages     = {38--42},
+  publisher = {Springer},
+  year      = {2014}
+}
+
+@inproceedings{simrank,
+  added-at = {2006-06-16T10:34:37.000+0200},
+  address = {New York, NY, USA},
+  author = {Jeh, Glen and Widom, Jennifer},
+  biburl = {https://www.bibsonomy.org/bibtex/29b901eee9786a06b6ef7203e7a920608/ldietz},
+  booktitle = {KDD '02: Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining},
+  citeulike-article-id = {349900},
+  doi = {10.1145/775047.775126},
+  interhash = {a6d4531690305dc44937118df813b4b5},
+  intrahash = {9b901eee9786a06b6ef7203e7a920608},
+  isbn = {158113567X},
+  keywords = {relationalmodels socialnets},
+  pages = {538--543},
+  priority = {4},
+  publisher = {ACM Press},
+  timestamp = {2006-06-16T10:34:37.000+0200},
+  title = {SimRank: a measure of structural-context similarity},
+  url = {http://dx.doi.org/10.1145/775047.775126},
+  year = 2002
+}
+
+@inproceedings{ppagerank,
+ author = {Jeh, Glen and Widom, Jennifer},
+ title = {Scaling Personalized Web Search},
+ booktitle = {Proceedings of the 12th International Conference on World Wide Web},
+ series = {WWW '03},
+ year = {2003},
+ isbn = {1-58113-680-3},
+ location = {Budapest, Hungary},
+ pages = {271--279},
+ numpages = {9},
+ url = {http://doi.acm.org/10.1145/775152.775191},
+ doi = {10.1145/775152.775191},
+ acmid = {775191},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {PageRank, web search},
+} 
+
+@inproceedings{wpathsim,
+  author    = {Phu Pham and
+               Phuc Do and
+               Chien D. C. Ta},
+  title     = {W-PathSim: Novel Approach of Weighted Similarity Measure in Content-Based
+               Heterogeneous Information Networks by Applying {LDA} Topic Modeling},
+  booktitle = {{ACIIDS} {(1)}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {10751},
+  pages     = {539--549},
+  publisher = {Springer},
+  year      = {2018}
+}
+
+@article{lda,
+ author = {Blei, David M. and Ng, Andrew Y. and Jordan, Michael I.},
+ title = {Latent Dirichlet Allocation},
+ journal = {J. Mach. Learn. Res.},
+ issue_date = {3/1/2003},
+ volume = {3},
+ month = mar,
+ year = {2003},
+ issn = {1532-4435},
+ pages = {993--1022},
+ numpages = {30},
+ url = {http://dl.acm.org/citation.cfm?id=944919.944937},
+ acmid = {944937},
+ publisher = {JMLR.org},
+}
+
+@inproceedings{word_cluster_web,
+ author = {Matsuo, Yutaka and Sakaki, Takeshi and Uchiyama, K\^{o}ki and Ishizuka, Mitsuru},
+ title = {Graph-based Word Clustering Using a Web Search Engine},
+ booktitle = {Proceedings of the 2006 Conference on Empirical Methods in Natural Language Processing},
+ series = {EMNLP '06},
+ year = {2006},
+ isbn = {1-932432-73-6},
+ location = {Sydney, Australia},
+ pages = {542--550},
+ numpages = {9},
+ url = {http://dl.acm.org/citation.cfm?id=1610075.1610150},
+ acmid = {1610150},
+ publisher = {Association for Computational Linguistics},
+ address = {Stroudsburg, PA, USA},
+}
+
+@article{clustering_newman,
+  added-at = {2008-06-02T15:12:04.000+0200},
+  author = {Newman, M.E.J.},
+  biburl = {https://www.bibsonomy.org/bibtex/256de7e6d214faebdbf2f2ef0fce09d7d/hotho},
+  interhash = {4493f03106eb8dd9db41c0ef3f667bb3},
+  intrahash = {56de7e6d214faebdbf2f2ef0fce09d7d},
+  journal = {Physical Review E},
+  keywords = {algorithm clustering community fast networks},
+  month = {September},
+  timestamp = {2008-06-02T15:12:05.000+0200},
+  title = {Fast algorithm for detecting community structure in networks},
+  url = {http://arxiv.org/abs/cond-mat/0309508},
+  volume = 69,
+  year = 2003
+}
+
+@techreport{clustering_mcl,
+ author = {Dongen, Stijn},
+ title = {A Cluster Algorithm for Graphs},
+ year = {2000},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Aercim_cwi%3Aercim.cwi%2F%2FINS-R0010},
+ publisher = {CWI (Centre for Mathematics and Computer Science)},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+}
+
+@phdthesis{clustering_mst,
+ author = {Pirim, Harun},
+ advisor = {Eksioglu, Burak},
+ title = {A Minimum Spanning Tree Based Clustering Algorithm for High Throughput Biological Data},
+ year = {2011},
+ isbn = {978-1-124-58902-2},
+ note = {AAI3450335},
+ publisher = {Mississippi State University},
+ address = {Mississippi State, MS, USA},
+}
+
+@article{kmeans,
+  added-at = {2011-01-11T13:34:58.000+0100},
+  author = {Hartigan, J. A. and Wong, M. A.},
+  biburl = {https://www.bibsonomy.org/bibtex/20399e12b4e411a03eda28ebaf11553ec/enitsirhc},
+  interhash = {f32378f161e481db5375fe5164281ee9},
+  intrahash = {0399e12b4e411a03eda28ebaf11553ec},
+  journal = {JSTOR: Applied Statistics},
+  keywords = {kmeans clustering},
+  number = 1,
+  pages = {100--108},
+  timestamp = {2011-01-11T13:34:58.000+0100},
+  title = {A k-means clustering algorithm},
+  volume = 28,
+  year = 1979
+}
+
+@inproceedings{dbscan,
+ author = {Ester, Martin and Kriegel, Hans-Peter and Sander, J\"{o}rg and Xu, Xiaowei},
+ title = {A Density-based Algorithm for Discovering Clusters a Density-based Algorithm for Discovering Clusters in Large Spatial Databases with Noise},
+ booktitle = {Proceedings of the Second International Conference on Knowledge Discovery and Data Mining},
+ series = {KDD'96},
+ year = {1996},
+ location = {Portland, Oregon},
+ pages = {226--231},
+ numpages = {6},
+ url = {http://dl.acm.org/citation.cfm?id=3001460.3001507},
+ acmid = {3001507},
+ publisher = {AAAI Press},
+ keywords = {arbitrary shape of clusters, clustering algorithms, efficiency on large spatial databases, handling nlj4-275oise},
+} 
+
+@inproceedings{osipov_text_appliance,
+    author = {Осипов, Г. С. and Смирнов, И. В. and Тихомиров, И. А. and  Соченков, И. В.},
+    title = {TEXTAPPLIANCE – новое решение для интеллектуального поиска и анализа больших массивов текстов},
+    booktitle = {Материалы второго международного профессионального форума «Книга. Культура. Образование. Инновации» («Крым-2016»).},
+    pages = {270--271},
+    numpages = {429},
+    year = {2016},
+    location = {Судак, Россия},
+    publusher = {Государственная публичная научно-техническая библиотека России}
+}
+
+@inproceedings{osipov_plagiarism,
+    author = "Осипов, Г. С. and Смирнов, И. В. and Тихомиров, И. А. and  Соченков, И. В. and Зубарев, Д. В. and  Исаков, В. А.",
+    title = {Технологии семантического поиска заимствований в научных текстах},
+    booktitle = {Материалы второго международного профессионального форума «Книга. Культура. Образование. Инновации» («Крым-2016»).},
+    pages = {311--313},
+    numpages = {429},
+    year = {2016},
+    location = {Судак, Россия},
+    publusher = {Государственная публичная научно-техническая библиотека России}
+}
+
+@article{osipov_semantic,
+  author = {Осипов, Г. С. and Смирнов, И. В.},
+  journal = {Системы высокой доступности},
+  number = 1,
+  pages = {41--44},
+  title = {Семантический анализ научных текстов и их больших массивов},
+  volume = 12,
+  year = 2016
 }

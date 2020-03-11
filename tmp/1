@@ -1,0 +1,53 @@
+class Solution(object):
+    class TreeNode(object):
+        def __init__(self):
+            self.value = None
+            self.children = []
+            
+    def lengthLongestPath(self, input):
+        """
+        :type input: str
+        :rtype: int
+        """        
+        current_answer = 0
+        current_level = 0
+        level_sizes = [0]
+        i = 0
+        while i < len(input):
+            if input[i] == "\n":
+                # iterate to last \t
+                i += 1
+                current_level = 0
+                while input[i] == "\t":
+                    i += 1
+                    current_level += 1
+                    if len(level_sizes) <= current_level:
+                        #print 'there', current_level
+                        level_sizes.append(level_sizes[current_level - 1])
+                    #else:
+                    #    print 'here', current_level
+                    #    print level_sizes
+                    #    level_sizes[current_level] = level_sizes[current_level - 1]
+            else:
+                # iterate to next \n
+                is_file = False
+                item_len = 0
+                print '>'
+                print level_sizes
+                while i < len(input) and input[i] != "\n":
+                    is_file |= (input[i] == ".")
+                    item_len += 1
+                    i += 1
+            
+                level_sizes[current_level] += item_len
+                print level_sizes
+
+
+                if is_file:
+                    print level_sizes
+                    file_len = level_sizes[current_level] + len(level_sizes) - 1
+                    current_answer = max(current_answer, file_len)
+                    
+                if i == len(input):
+                    return current_answer
+
